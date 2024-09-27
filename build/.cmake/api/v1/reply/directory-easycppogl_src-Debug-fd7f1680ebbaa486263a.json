@@ -1,0 +1,168 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"easycppogl_src/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 133,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 139,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 141,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 144,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 172,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 178,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"easycppogl_src/libeasycppogl_d.a"
+			],
+			"targetId" : "easycppogl::@8965ad2ff0dca0f258f4",
+			"targetIndex" : 0,
+			"type" : "target"
+		},
+		{
+			"backtrace" : 2,
+			"component" : "Unspecified",
+			"destination" : "include/easycppogl",
+			"paths" : 
+			[
+				"easycppogl_src/imconfig.h",
+				"easycppogl_src/imgui.h",
+				"easycppogl_src/imgui_impl_glfw.h",
+				"easycppogl_src/imgui_impl_opengl3.h",
+				"easycppogl_src/imgui_impl_opengl3_loader.h",
+				"easycppogl_src/imgui_internal.h",
+				"easycppogl_src/imstb_rectpack.h",
+				"easycppogl_src/imstb_textedit.h",
+				"easycppogl_src/imstb_truetype.h",
+				"easycppogl_src/portable_file_dialogs.h",
+				"easycppogl_src/gl_eigen.h",
+				"easycppogl_src/ebo.h",
+				"easycppogl_src/vbo.h",
+				"easycppogl_src/vao.h",
+				"easycppogl_src/shader_program.h",
+				"easycppogl_src/transform_feedback.h",
+				"easycppogl_src/texture.h",
+				"easycppogl_src/texture1d.h",
+				"easycppogl_src/texture2d.h",
+				"easycppogl_src/texture3d.h",
+				"easycppogl_src/texturecubemap.h",
+				"easycppogl_src/texture1darray.h",
+				"easycppogl_src/texture2darray.h",
+				"easycppogl_src/texturebuffer.h",
+				"easycppogl_src/fbo.h",
+				"easycppogl_src/camera.h",
+				"easycppogl_src/gl_viewer.h",
+				"easycppogl_src/mframe.h",
+				"easycppogl_src/boundingbox.h",
+				"easycppogl_src/material.h",
+				"easycppogl_src/scenegraph.h",
+				"easycppogl_src/mesh.h",
+				"easycppogl_src/mesh_assimp_importer.h",
+				"easycppogl_src/ubo.h",
+				"easycppogl_src/ssbo.h"
+			],
+			"type" : "file"
+		},
+		{
+			"backtrace" : 3,
+			"component" : "Unspecified",
+			"destination" : "include/easycppogl",
+			"paths" : 
+			[
+				"GL"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 4,
+			"component" : "Unspecified",
+			"destination" : "include/easycppogl",
+			"paths" : 
+			[
+				"KHR"
+			],
+			"type" : "directory"
+		},
+		{
+			"backtrace" : 5,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/easycppogl",
+			"exportName" : "easycppoglTargets",
+			"exportTargets" : 
+			[
+				{
+					"id" : "easycppogl::@8965ad2ff0dca0f258f4",
+					"index" : 0
+				}
+			],
+			"paths" : 
+			[
+				"easycppogl_src/CMakeFiles/Export/642b13b4a7ac1fb8a12fda35d4012234/easycppoglTargets.cmake"
+			],
+			"type" : "export"
+		},
+		{
+			"backtrace" : 6,
+			"component" : "Unspecified",
+			"destination" : "lib/cmake/easycppogl",
+			"paths" : 
+			[
+				"build/easycppogl_src/easycppogl/easycppoglConfig.cmake",
+				"build/easycppogl_src/easycppogl/easycppoglConfigVersion.cmake"
+			],
+			"type" : "file"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "easycppogl_src",
+		"source" : "easycppogl_src"
+	}
+}

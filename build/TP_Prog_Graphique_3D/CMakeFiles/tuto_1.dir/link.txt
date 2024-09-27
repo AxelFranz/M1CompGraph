@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/tuto_1.dir/tuto_1.cpp.o -o tuto_1  ../easycppogl_src/libeasycppogl_d.a /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 /usr/lib/x86_64-linux-gnu/libassimp.so.5.2.4 -lz /usr/lib/x86_64-linux-gnu/libdraco.so.8.0.0 -lminizip -Wl,-Bstatic -lrt -Wl,-Bdynamic -ldl -lpthread 
