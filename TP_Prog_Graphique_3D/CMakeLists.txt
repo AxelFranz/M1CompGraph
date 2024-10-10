@@ -22,6 +22,7 @@ set( tp_list
     tuto2_4
     tuto3
     tuto4
+    tp3
 )
 
 foreach( exec_tp ${tp_list})

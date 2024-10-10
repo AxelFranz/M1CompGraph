@@ -226,6 +226,7 @@ easycppogl_src/CMakeFiles/easycppogl.dir/boundingbox.cpp.o: \
  /usr/include/c++/13/cstdint \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h \
  /usr/include/eigen3/Eigen/src/Core/util/StaticAssert.h \
  /usr/include/eigen3/Eigen/src/Core/util/XprHelper.h \

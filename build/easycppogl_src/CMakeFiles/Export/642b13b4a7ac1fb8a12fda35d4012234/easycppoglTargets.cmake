@@ -7,7 +7,7 @@ if(CMAKE_VERSION VERSION_LESS "2.8.3")
    message(FATAL_ERROR "CMake >= 2.8.3 required")
 endif()
 cmake_policy(PUSH)
-cmake_policy(VERSION 2.8.3...3.25)
+cmake_policy(VERSION 2.8.3...3.26)
 #----------------------------------------------------------------
 # Generated CMake target import file.
 #----------------------------------------------------------------
@@ -59,7 +59,7 @@ endif()
 add_library(easycppogl STATIC IMPORTED)
 
 set_target_properties(easycppogl PROPERTIES
-  INTERFACE_COMPILE_DEFINITIONS "_USE_MATH_DEFINES;NOMINMAX;DEF_DATA_PATH=;DEF_DATA_PATH=;DDEF_SHADERS_PATH=/home/axel/3D/easycppogl/easycppogl_src"
+  INTERFACE_COMPILE_DEFINITIONS "_USE_MATH_DEFINES;NOMINMAX;DEF_DATA_PATH=/home/axel/3D/easycppogl/data;DEF_DATA_PATH=/home/axel/3D/easycppogl/data;DDEF_SHADERS_PATH=/home/axel/3D/easycppogl/easycppogl_src"
   INTERFACE_COMPILE_FEATURES "cxx_std_14"
   INTERFACE_COMPILE_OPTIONS "-msse4"
   INTERFACE_INCLUDE_DIRECTORIES "${_IMPORT_PREFIX}/include/easycppogl"

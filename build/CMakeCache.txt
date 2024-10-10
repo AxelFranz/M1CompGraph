@@ -230,7 +230,7 @@ EasyCppOGL_SOURCE_DIR:STATIC=/home/axel/3D/easycppogl
 Eigen3_DIR:PATH=/usr/share/eigen3/cmake
 
 //Path where to read image mesh ...
-SYS_DATA_PATH:PATH=
+SYS_DATA_PATH:PATH=/home/axel/3D/easycppogl/data
 
 //Value Computed by CMake
 TP_Prog_Graphique_3D_BINARY_DIR:STATIC=/home/axel/3D/easycppogl/build/TP_Prog_Graphique_3D
@@ -242,13 +242,10 @@ TP_Prog_Graphique_3D_IS_TOP_LEVEL:STATIC=OFF
 TP_Prog_Graphique_3D_SOURCE_DIR:STATIC=/home/axel/3D/easycppogl/TP_Prog_Graphique_3D
 
 //Path where to put GLSL shaders ...
-TP_SHADERS_PATH:PATH=/home/axel
+TP_SHADERS_PATH:PATH=/home/axel/3D/easycppogl/TP_Prog_Graphique_3D/shaders
 
 //The directory containing a CMake configuration file for assimp.
-assimp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/assimp-5.2
-
-//The directory containing a CMake configuration file for draco.
-draco_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/draco
+assimp_DIR:PATH=/usr/lib/x86_64-linux-gnu/cmake/assimp-5.3
 
 //Value Computed by CMake
 easycppogl_BINARY_DIR:STATIC=/home/axel/3D/easycppogl/build/easycppogl_src
@@ -279,9 +276,9 @@ CMAKE_CACHEFILE_DIR:INTERNAL=/home/axel/3D/easycppogl/build
 //Major version of cmake used to create the current loaded cache
 CMAKE_CACHE_MAJOR_VERSION:INTERNAL=3
 //Minor version of cmake used to create the current loaded cache
-CMAKE_CACHE_MINOR_VERSION:INTERNAL=27
+CMAKE_CACHE_MINOR_VERSION:INTERNAL=28
 //Patch version of cmake used to create the current loaded cache
-CMAKE_CACHE_PATCH_VERSION:INTERNAL=4
+CMAKE_CACHE_PATCH_VERSION:INTERNAL=3
 //ADVANCED property for variable: CMAKE_COLOR_MAKEFILE
 CMAKE_COLOR_MAKEFILE-ADVANCED:INTERNAL=1
 //Path to CMake executable.
@@ -382,7 +379,7 @@ CMAKE_RANLIB-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_READELF
 CMAKE_READELF-ADVANCED:INTERNAL=1
 //Path to CMake installation.
-CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.27
+CMAKE_ROOT:INTERNAL=/usr/share/cmake-3.28
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS
 CMAKE_SHARED_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_SHARED_LINKER_FLAGS_DEBUG
@@ -415,6 +412,10 @@ CMAKE_TAPI-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/usr/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//MODIFIED property for variable: SYS_DATA_PATH
+SYS_DATA_PATH-MODIFIED:INTERNAL=ON
+//MODIFIED property for variable: TP_SHADERS_PATH
+TP_SHADERS_PATH-MODIFIED:INTERNAL=ON
 //linker supports push/pop state
 _CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED:INTERNAL=TRUE
 

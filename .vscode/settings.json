@@ -71,5 +71,6 @@
         "iomanip": "cpp",
         "cinttypes": "cpp",
         "variant": "cpp"
-    }
+    },
+    "C_Cpp.default.compilerPath": "/usr/bin/g++"
 }

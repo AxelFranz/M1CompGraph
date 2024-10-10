@@ -158,6 +158,7 @@ TP_Prog_Graphique_3D/CMakeFiles/tuto3.dir/tuto3.cpp.o: \
  /usr/include/c++/13/bits/align.h \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h \
  /usr/include/c++/13/bits/unique_ptr.h \
  /usr/include/c++/13/bits/shared_ptr.h \
  /usr/include/c++/13/bits/shared_ptr_base.h \
@@ -506,6 +507,8 @@ TP_Prog_Graphique_3D/CMakeFiles/tuto3.dir/tuto3.cpp.o: \
  /home/axel/3D/easycppogl/easycppogl_src/../GL/glcorearb.h \
  /home/axel/3D/easycppogl/easycppogl_src/../KHR/khrplatform.h \
  /home/axel/3D/easycppogl/easycppogl_src/vbo.h \
+ /home/axel/3D/easycppogl/easycppogl_src/texturecubemap.h \
+ /home/axel/3D/easycppogl/easycppogl_src/texture.h \
  /home/axel/3D/easycppogl/easycppogl_src/gl_viewer.h \
  /home/axel/3D/easycppogl/easycppogl_src/imgui.h \
  /home/axel/3D/easycppogl/easycppogl_src/imconfig.h \
@@ -554,7 +557,6 @@ TP_Prog_Graphique_3D/CMakeFiles/tuto3.dir/tuto3.cpp.o: \
  /home/axel/3D/easycppogl/easycppogl_src/mesh.h \
  /home/axel/3D/easycppogl/easycppogl_src/ebo.h \
  /home/axel/3D/easycppogl/easycppogl_src/texture2d.h \
- /home/axel/3D/easycppogl/easycppogl_src/texture.h \
  /home/axel/3D/easycppogl/easycppogl_src/boundingbox.h \
  /home/axel/3D/easycppogl/easycppogl_src/scenegraph.h \
  /home/axel/3D/easycppogl/easycppogl_src/material.h

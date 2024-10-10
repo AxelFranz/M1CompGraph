@@ -110,4 +110,5 @@ easycppogl_src/CMakeFiles/easycppogl.dir/imgui_demo.cpp.o: \
  /usr/include/c++/13/stdlib.h /usr/include/c++/13/cstdlib \
  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-least.h
