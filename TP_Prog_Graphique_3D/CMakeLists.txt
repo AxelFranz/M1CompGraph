@@ -18,11 +18,13 @@ set( tp_list
     tp1
     tuto2_1
     tuto2_2
+    tp6
     tuto2_3
     tuto2_4
     tuto3
     tuto4
     tp3
+    tp5
 )
 
 foreach( exec_tp ${tp_list})

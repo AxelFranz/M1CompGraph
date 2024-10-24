@@ -78,7 +78,7 @@ void Viewer::init_ogl()
 	// Geometry
 	// ***********************************
 	// Load OBJ file mesh
-	auto mesh = EZCOGL::Mesh::load(DATA_PATH + "/models/mustang_GT.obj")->data();
+	auto mesh = EZCOGL::Mesh::load(DATA_PATH + "/models/donut.obj")->data();
 	nbMeshParts = mesh.size();
 	// set the renderer for all the meshes parts
 	for (int i = 0; i < nbMeshParts; ++i)
@@ -114,7 +114,6 @@ void Viewer::draw_ogl()
 	// Enable Depth test
 	glEnable(GL_DEPTH_TEST);
 
-
 	// Get the view and projection matrix
 	const EZCOGL::GLMat4 &view = this->get_view_matrix();
 	EZCOGL::GLMat4 viewModif = view;
@@ -138,7 +137,7 @@ void Viewer::draw_ogl()
 	tex_envMap->bind(0);
 	cube_rend->draw(GL_TRIANGLES);
 
-	glEnable(GL_DEPTH_TEST);	
+	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	shaderPrg->bind();
@@ -152,9 +151,12 @@ void Viewer::draw_ogl()
 	EZCOGL::set_uniform_value(4, EZCOGL::GLVec3(intensity, intensity, intensity));
 	EZCOGL::set_uniform_value(5, EZCOGL::Transfo::sub33(view * model) * lightPos);
 	EZCOGL::set_uniform_value(3, EZCOGL::Transfo::inverse_transpose(view * model));
+	// Eclater la boucle en 2, afficher d'abord opacity = 1 puis le reste
 	for (int i = 0; i < nbMeshParts; ++i)
 	{
 
+		if (opacity[i] != 1)
+			continue;
 		EZCOGL::set_uniform_value(6, ka[i]);
 		EZCOGL::set_uniform_value(7, kd[i]);
 		EZCOGL::set_uniform_value(8, ks[i]);
@@ -162,6 +164,20 @@ void Viewer::draw_ogl()
 		EZCOGL::set_uniform_value(12, opacity[i]);
 		car_rend[i]->draw(GL_TRIANGLES);
 	}
+
+	for (int i = 0; i < nbMeshParts; ++i)
+	{
+
+		if (opacity[i] == 1)
+			continue;
+		EZCOGL::set_uniform_value(6, ka[i]);
+		EZCOGL::set_uniform_value(7, kd[i]);
+		EZCOGL::set_uniform_value(8, ks[i]);
+		EZCOGL::set_uniform_value(9, ns[i]);
+		EZCOGL::set_uniform_value(12, opacity[i]);
+		car_rend[i]->draw(GL_TRIANGLES);
+	}
+
 	glDisable(GL_BLEND);
 }
 
